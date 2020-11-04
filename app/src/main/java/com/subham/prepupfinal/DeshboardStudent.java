@@ -53,6 +53,7 @@ public class DeshboardStudent extends AppCompatActivity implements NavigationVie
 //                startActivity(new Intent(DeshboardStudent.this,StudentProfile.class));
                 Intent intent = new Intent(DeshboardStudent.this,StudentProfile.class);
                 intent.putExtra("userDetails",loginResponse);
+                startActivity(intent);
                 break;
             case R.id.sd_home:
                 startActivity(new Intent(DeshboardStudent.this,DeshboardStudent.class));
