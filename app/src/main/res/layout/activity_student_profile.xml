@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sc_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorYellow"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="48dp"
+                android:padding="20dp"
+                android:src="@drawable/av1" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Name"/>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Phone Number"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Email ID"/>
+            <TextView
+                android:id="@+id/tv_inst"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Institute Nmae"/>
+            <TextView
+                android:id="@+id/tv_role"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Role"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:background="#8D99E1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Update Profile" />
+
+            <Button
+                android:id="@+id/btn_change"
+                android:layout_margin="10dp"
+                android:background="#8D99E1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Change Password" />
+
+        </LinearLayout>
+
+
+</LinearLayout>
