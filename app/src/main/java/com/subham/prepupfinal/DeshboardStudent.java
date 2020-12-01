@@ -41,7 +41,6 @@ public class DeshboardStudent extends AppCompatActivity implements NavigationVie
         mNavigationview.setNavigationItemSelectedListener(this);
 
         loginResponse = (LoginResponse) getIntent().getSerializableExtra("userDetails");
-//        System.out.println(userDetails.getUserDetails().getEmailid());
 
     }
 

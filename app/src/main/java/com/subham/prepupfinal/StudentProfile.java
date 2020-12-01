@@ -2,7 +2,9 @@ package com.subham.prepupfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -30,6 +32,7 @@ public class StudentProfile extends AppCompatActivity {
         tvinst = findViewById(R.id.tv_inst);
         tvrole = findViewById(R.id.tv_role);
         btn_update = findViewById(R.id.btn_update);
+
         btn_change = findViewById(R.id.btn_change);
 
         loginResponse = (LoginResponse) getIntent().getSerializableExtra("userDetails");
@@ -47,5 +50,25 @@ public class StudentProfile extends AppCompatActivity {
         tvemail.setText(email);
         tvinst.setText(inst);
         tvrole.setText(role);
+
+
+        btn_update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudentProfile.this,UpdateProfile.class);
+                intent.putExtra("userDetails",loginResponse);
+                startActivity(intent);
+            }
+        });
+
+        btn_change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudentProfile.this,ChangePassword.class);
+                intent.putExtra("userDetails",loginResponse);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -13,4 +13,10 @@ public interface UserService {
 
     @POST("rest/registration/")
     Call<RegisterResponse> SignupUser(@Body HashMap<String, Object> params);
+
+    @POST("rest/profileupdate/")
+    Call<LoginResponse> UpdateUser(@Body HashMap<String, Object> params);
+
+    @POST("rest/changepass/")
+    Call<ChangePasswordResponse> ChangePassword(@Body HashMap<String, Object> params);
 }

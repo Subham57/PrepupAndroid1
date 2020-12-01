@@ -18,8 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorYellow"
-            android:minHeight="?attr/actionBarSize"
-            app:menu="@menu/common_deshbord_menu" />
+            android:minHeight="?attr/actionBarSize" />
 
     </LinearLayout>
 
